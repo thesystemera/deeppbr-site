@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 360" fill="none">
+  <defs>
+    <linearGradient id="repair-surface" x1="34" y1="52" x2="206" y2="306" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB38F"/>
+      <stop offset=".52" stop-color="#FF7A45"/>
+      <stop offset="1" stop-color="#FF40B0"/>
+    </linearGradient>
+    <linearGradient id="repair-seam" x1="120" y1="64" x2="120" y2="298" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE2D4"/>
+      <stop offset=".5" stop-color="#FF7A45"/>
+      <stop offset="1" stop-color="#FF40B0"/>
+    </linearGradient>
+    <filter id="repair-glow" x="-80%" y="-30%" width="260%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <path d="M39 86 81 54l34 28-15 42-40 14-31-24 10-28Z" stroke="url(#repair-surface)" stroke-width="2"/>
+  <path d="m39 86 42 16 34-20M81 54v48l19 22M60 138l21-36M29 114l52-12" stroke="url(#repair-surface)" stroke-width="1" opacity=".58"/>
+  <path d="m132 82 32-28 40 33 7 35-31 25-40-18-16-30 8-17Z" stroke="url(#repair-surface)" stroke-width="2"/>
+  <path d="m132 82 48 15 24-10m-24 10 31 25m-31-25v50m-40-18 40-32m-56 2 56-2" stroke="url(#repair-surface)" stroke-width="1" opacity=".58"/>
+
+  <path d="M66 148 100 127l14 31-18 28-49 4-18-28 37-14Z" stroke="url(#repair-surface)" stroke-width="1.8"/>
+  <path d="m66 148 30 38m4-59-34 21-19 42m49-4-49 4m19-42-37 14" stroke="url(#repair-surface)" stroke-width="1" opacity=".55"/>
+  <path d="m139 131 42 17 31 27-21 28-49-9-17-34 14-29Z" stroke="url(#repair-surface)" stroke-width="1.8"/>
+  <path d="m139 131 3 63m39-46-39 46m70-19-70 19m-17-34 56-12m10 55-10-55" stroke="url(#repair-surface)" stroke-width="1" opacity=".55"/>
+
+  <path d="m48 209 49-7 17 27-18 36-47 18-23-31 22-43Z" stroke="url(#repair-surface)" stroke-width="1.8"/>
+  <path d="m48 209 48 56m1-63-49 7-22 43m70 13-70-13m23 31 47-18m1-63-1 63" stroke="url(#repair-surface)" stroke-width="1" opacity=".55"/>
+  <path d="m141 211 48 5 25 34-26 35-49-21-16-31 18-22Z" stroke="url(#repair-surface)" stroke-width="1.8"/>
+  <path d="m141 211 47 74m1-69-48-5-18 22m65 52-65-52m16 31 49 21m1-69-1 69" stroke="url(#repair-surface)" stroke-width="1" opacity=".55"/>
+
+  <path d="m118 76-8 29 11 24-10 28 12 29-11 26 11 28-10 27 10 33" stroke="#FF7A45" stroke-width="10" opacity=".18" filter="url(#repair-glow)"/>
+  <path d="m118 76-8 29 11 24-10 28 12 29-11 26 11 28-10 27 10 33" stroke="url(#repair-seam)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#FFE7DC" stroke-width="1.6" stroke-linecap="round">
+    <path d="m104 101 14 6"/><path d="m108 127 17 3"/><path d="m104 156 16 2"/>
+    <path d="m111 183 17 4"/><path d="m105 211 15 3"/><path d="m112 238 16 1"/>
+    <path d="m105 266 15 3"/>
+  </g>
+  <g fill="#FFE7DC">
+    <circle cx="118" cy="76" r="3"/><circle cx="110" cy="105" r="2.4"/><circle cx="121" cy="129" r="2.4"/>
+    <circle cx="111" cy="157" r="2.4"/><circle cx="123" cy="186" r="2.4"/><circle cx="112" cy="212" r="2.4"/>
+    <circle cx="123" cy="240" r="2.4"/><circle cx="113" cy="267" r="2.4"/><circle cx="123" cy="300" r="3"/>
+  </g>
+  <g fill="#FF7A45" opacity=".7">
+    <circle cx="43" cy="69" r="2"/><circle cx="202" cy="65" r="2.4"/><circle cx="18" cy="183" r="1.8"/>
+    <circle cx="220" cy="205" r="2"/><circle cx="37" cy="298" r="2.4"/><circle cx="207" cy="306" r="1.8"/>
+  </g>
+</svg>
